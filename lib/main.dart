@@ -9,18 +9,21 @@ void main() {
 }
 
 class MyApp extends StatelessWidget {
+
   const MyApp({super.key});
 
   @override
   Widget build(BuildContext context) {
+    var name = 'Voyager I';
+    var year = 1977;
     return MaterialApp(
-      title: 'Welcome to Flutter',
+      title: name,
       home: Scaffold(
         appBar: AppBar(
-          title: const Text('Welcome to Flutter'),
+          title: Text('Welcome to yy Flutter $year'),
         ),
-        body: const Center(
-          child: Text('Hello World'),
+        body:  Center(
+          child: Text('Hello xyxx $name' , selectionColor: Colors.cyan, ),
         ),
       ),
     );
